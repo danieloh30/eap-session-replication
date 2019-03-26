@@ -82,7 +82,7 @@ If you look at the running pod's logs, you should be able to identify the JGroup
 
 **Step 5 - Test**
 
-Browse to the application itself, a route should have been created - append **session-replication/** to the route URL:
+Browse to the application itself, a route should have been created - append **/** to the route URL:
 
 ![image](images/session-replication-app0.png)
 
