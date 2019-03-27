@@ -64,7 +64,7 @@ Lets create our application from this template:
 
 We can also scale the deployment configuration so that two pods will running our EAP application:
 
-    $ oc scale dc/eap-app --replicas=2
+    $ oc scale dc/eap-session-replication --replicas=2
 
 
 **Step 4 - Check application build and deploy**
