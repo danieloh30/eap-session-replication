@@ -73,7 +73,7 @@ Wait for the application to build and deploy. You can follow the build logs eith
 
 Once the build and deployment has successfully completed, the overview should resemble:
 
-![image](images/session-replication-deploy.png)
+![image](images/session-replication-deploy.png width=800)
 
 If you look at the running pod's logs, you should be able to identify the JGroups cluster members being added `Received new cluster view:`
 
