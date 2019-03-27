@@ -73,18 +73,18 @@ Wait for the application to build and deploy. You can follow the build logs eith
 
 Once the build and deployment has successfully completed, the overview should resemble:
 
-![image](images/session-replication-deploy.png width=800)
+<img src="images/session-replication-deploy.png" width="800">
 
 If you look at the running pod's logs, you should be able to identify the JGroups cluster members being added `Received new cluster view:`
 
-![image](images/session-replication-logs.png)
+<img src="images/session-replication-logs.png" width="800">
 
 
 **Step 5 - Test**
 
 Browse to the application itself, a route should have been created - append **/** to the route URL:
 
-![image](images/session-replication-app0.png)
+<img src="images/session-replication-app0.png" width="500">
 
 The web application displays the following information:
 
@@ -94,8 +94,7 @@ The web application displays the following information:
 
 Now, select the **Increment Counter** link:
 
-![image](images/session-replication-increment.png)
-
+<img src="images/session-replication-increment.png" width="500">
 You should see the session variables being set.
 
 To test that the session is being replicated OK, we are going to kill the running container e.g. in this example
@@ -104,11 +103,11 @@ To test that the session is being replicated OK, we are going to kill the runnin
 
 You should see on that the replication controller immediately starts another pod to keep the replica count at the desired level:
 
-![image](images/session-replication-kill-container.png)
+<img src="images/session-replication-kill-container.png" width="500">
 
 Now if you hit the **Refresh** link in the web page, you will see (after a short pause) the **same** web session being served
 up from a new container
 
-![image](images/session-replication-ok.png)
+<img src="images/session-replication-ok.png" width="500">
 
 The `Session ID` and session attributes, values remain the same and the container serving the page has changed.
